@@ -1,0 +1,6 @@
+{
+    "host": "localhost",
+    "user": "root",
+    "database": "futebol_manager",
+    "password": "root"
+}

@@ -1,0 +1,66 @@
+body {
+  overflow: hidden;
+}
+
+/* Football introduction */
+#introduction {
+  background-color: rgb(29, 107, 37);
+  width: 100vw;
+  height: 100vh;
+
+  display: none; /* ou flex */
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+
+  overflow: hidden;
+}
+
+#introduction-image {
+  max-height: 80vh;
+}
+
+#introduction-button {
+  opacity: 0;
+  font-size: 5rem;
+  transition: 250ms;
+  font-weight: bold;
+}
+
+.centerIntroduction {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+/* Loader */
+.loader-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); /* Slightly darker background */
+  z-index: 9999; /* Ensure the loader stays on top of everything */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.loader {
+  border: 8px solid #f3f3f3; /* Loader border color */
+  border-top: 8px solid #3498db; /* Loader color */
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}

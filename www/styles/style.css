@@ -1,0 +1,222 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Flex&display=swap');
+
+* {
+    font-family: 'Roboto Flex', sans-serif;
+}
+html {
+    overflow: auto;
+}
+
+/* Nav Bar */
+.navbar-font-size {
+    font-size: 2.7rem;
+}
+
+.navbar-logo {
+    max-height: 9rem;
+}
+
+.navbar {
+    margin-bottom: 5vh;
+}
+
+.nav-item {
+    margin-left: 1.2rem;
+}
+
+.bottom-space {
+    margin-bottom: 0.5rem;
+}
+
+@media screen and (min-width: 992px) {
+    .navbar-font-size {
+        font-size: x-large;
+    }
+
+    .navbar-logo {
+        max-height: 3rem;
+    }
+
+    .nav-item {
+        margin-left: 0;
+    }
+
+    .bottom-space {
+        margin-bottom: 0;
+    }
+}
+
+/* Main Page */
+#mainDiv {
+    margin: auto;
+    max-width: 1400px;
+
+    font-size: 1.9rem;
+}
+
+.centerFlex {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+}
+
+.centerFlex>* {
+    margin-bottom: 4vh;
+}
+
+#contentTitle {
+    text-align: center;
+    margin-bottom: 5vh;
+}
+
+/* Table Content */
+
+#dynamicView {
+    font-weight: bold;
+}
+
+.seeDetails {
+    text-decoration: none;
+    text-align: center;
+    font-size: xx-large;
+    color: black;
+
+    opacity: 0.6;
+    transition: 250ms;
+}
+
+.seeDetails:hover {
+    opacity: 0.9;
+    cursor: pointer;
+}
+
+.winnerDetails {
+    opacity: 1;
+    font-weight: bold;
+    transition: 250ms;
+}
+
+.winnerDetails:hover {
+    opacity: 0.7;
+}
+
+.table-size {
+    width: 80vw;
+    height: 50vh;
+}
+
+@media screen and (min-width: 992px) {
+    #mainDiv {
+        font-size: 1.2rem;
+    }
+
+    .seeDetails {
+        font-size: large;
+    }
+}
+
+/* Fixed table header (rever)*/
+/*th {
+    position: sticky;
+    top: 0;
+}*/
+
+/* Forms */
+
+#showTab,
+#formTab,
+#backTab {
+    visibility: hidden;
+}
+
+#forms,
+#playerForm,
+#teamForm,
+#competitionForm {
+    display: none;
+}
+
+/* Tamanho fontes dos forms */
+.form input,
+.form select,
+.form button,
+.form textarea {
+    font-size: 1rem;
+}
+
+.form-select option {
+    font-size: 1rem;
+}
+
+.invalid-feedback {
+    display: none;
+}
+
+#forms {
+    width: 80%;
+}
+
+.forms .row {
+    margin-bottom: 1rem;
+}
+
+@media screen and (min-width: 992px) {
+
+    .form input,
+    .form select,
+    .form button,
+    .form textarea {
+        font-size: 1rem;
+    }
+
+    .form-select option {
+        font-size: 1rem;
+    }
+
+    #forms {
+        width: 40vw;
+    }
+}
+
+/* Change bootstrap active */
+.active {
+    font-weight: bold;
+}
+
+.bg-pink {
+    background-color: rgb(255, 232, 236);
+    border: 1px solid pink;
+}
+
+/* Table */
+.table td,
+.table th {
+    text-align: center;
+    vertical-align: middle;
+    scrollbar-gutter: stable;
+}
+
+/* textDiv */
+#homeDiv {
+    /* display: none; */
+    text-align: center;
+}
+
+#homeText {
+    font-size: 1.5rem; 
+    margin-bottom: 1rem; 
+}
+
+#homeButton,
+#fullReset {
+    width: 10rem;
+    margin-right: 1rem;
+}
+.opt{
+    font-size: 0.8em;
+}
+
+#playButton{
+    display: none;
+}
